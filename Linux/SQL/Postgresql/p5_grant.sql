@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES ON TABLE test TO testuser;

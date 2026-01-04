@@ -1,0 +1,7 @@
+# LOG KNOCKS
+sudo journalctl -u knockd -f
+# START/STOP
+/opt/knock/sbin/nginx -s stop
+# LOG NGINX KNOCK/PROD
+tail -f /opt/prod/logs/access.log
+# ./configure --prefix=/opt/vpns --with-http_ssl_module

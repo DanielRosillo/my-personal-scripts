@@ -1,0 +1,17 @@
+# NTFS ADS
+# Debido a que NTFS trata todas las partes de un archivo como un arreglo flujos es posible
+# ocultar informacion o mejor dicho otros arhivos usando el flujo de un archivo cualquiera
+# de esta forma es posible guardar archivos camuflajeados que no seran visibles en el administrador
+de archivos de windows.
+
+------------------------------OCULTAR ARCHIVO-----------------------------
+1- Abrir consonla de CMD.
+2- Navegar hasta la unidad.
+# Se necesitan 2 archivos, el archivo a ocultar y el archivo fachada.
+3- type {archivo_fachada} > {archivo_oculto}:{archivo_fachada}
+# type putty.exe > document.txt:putty.exe
+------------------------------RECUPERAR ARCHIVO-----------------------------
+1- Abrir PowerShell.
+2- Navegar hasta la unidad.
+3- .\{archivo_oculto}:{archivo_fachada}
+# .\document.txt:putty.exe

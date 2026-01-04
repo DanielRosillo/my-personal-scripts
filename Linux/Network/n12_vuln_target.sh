@@ -1,0 +1,1 @@
+nmap --script vuln 192.168.2.54

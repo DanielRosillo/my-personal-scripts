@@ -1,0 +1,1 @@
+adb push miarchivo.txt /sdcard/

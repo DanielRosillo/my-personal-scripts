@@ -1,0 +1,2 @@
+sudo su - postgres
+psql -h <IP_SERVIDOR> -U <usuario> -d <base_de_datos>

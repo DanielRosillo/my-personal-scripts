@@ -1,0 +1,12 @@
+//Para construir
+cargo build --release
+./target/release/server_gui
+-----------------
+cargo run
+--------------
+RUST_BACKTRACE=1 cargo run
+----------------
+//El comando bueno
+cargo run --release
+-------------------------
+cargo clean

@@ -1,0 +1,5 @@
+sudo -i -u postgres
+psql
+CREATE ROLE userdb WITH LOGIN PASSWORD '';
+ALTER ROLE userdb WITH SUPERUSER;
+\q

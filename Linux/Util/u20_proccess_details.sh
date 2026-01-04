@@ -1,0 +1,1 @@
+ps -p 2355 -o pid,ppid,cmd

@@ -1,0 +1,21 @@
+ACTIVITY:
+
+@Override
+public void onBackPressed() {
+    return;
+}
+
+MANIFEST:
+
+<intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.HOME" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+
+
+THEME:
+<item name="android:windowFullscreen">true</item>
+
+android:theme="android:Theme.Holo.NoActionBar.Fullscreen"

@@ -1,0 +1,1 @@
+fastboot oem unlock Q2IDGO3LYDUUWORG2

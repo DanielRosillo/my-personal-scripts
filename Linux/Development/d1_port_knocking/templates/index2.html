@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Entrando al sistema</title>
+</head>
+<body>
+    <h1>Entrando al sistema...</h1>
+    <button onclick="startSequence()">Entrar</button>
+
+    <script>
+        function knock(url) {
+            const img = new Image();
+            img.src = url + "?t=" + new Date().getTime(); // evitar caché
+        }
+
+        function startSequence() {
+            knock("https://platform.aspis.mx:85/two.html");
+            setTimeout(() => {
+                knock("https://platform.aspis.mx:90/tree.html");
+                setTimeout(() => {
+                    window.location.href = "https://platform.aspis.mx";
+                }, 1000);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
+<script>
+    document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    });
+</script>
+

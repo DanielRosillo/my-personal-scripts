@@ -1,0 +1,21 @@
+[Unit]
+Description=Configura interfaz dummy y arranca nginx personalizado
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStartPre=/sbin/modprobe dummy numdummies=1
+ExecStartPre=/sbin/ip link set up dummy0
+ExecStartPre=/sbin/ip addr add 10.10.10.1/32 dev dummy0
+ExecStart=/opt/knock/sbin/nginx
+ExecStartPost=/opt/prod/sbin/nginx
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+
+# sudo nano /etc/systemd/system/init-dummy-nginx.service
+# sudo systemctl daemon-reexec
+# sudo systemctl daemon-reload
+# sudo systemctl enable init-dummy-nginx.service

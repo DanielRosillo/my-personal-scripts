@@ -1,0 +1,33 @@
+# /etc/ssh/sshd_config
+AddressFamily any
+ListenAddress 0.0.0.0
+PermitRootLogin no
+PasswordAuthentication yes
+AcceptEnv LANG LC_*
+PermitUserEnvironment yes
+X11Forwarding yes
+X11DisplayOffset 10
+X11UseLocalhost yes
+UsePAM no
+LoginGraceTime 60
+#PermitRootLogin prohibit-password
+StrictModes yes
+MaxAuthTries 3
+MaxSessions 5
+Port 22
+Protocol 2
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+UsePrivilegeSeparation Yes
+PrintLastLog yes
+PermitEmptyPasswords no
+Subsystem       sftp    /usr/lib/openssh/sftp-server
+PermitTunnel yes
+PrintMotd yes
+TCPKeepAlive yes
+IgnoreRhosts yes
+LogLevel INFO
+HostbasedAuthentication no
+ChallengeResponseAuthentication no
+

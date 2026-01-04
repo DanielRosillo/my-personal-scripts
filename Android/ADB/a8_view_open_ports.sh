@@ -1,0 +1,1 @@
+adb shell netstat -unta
