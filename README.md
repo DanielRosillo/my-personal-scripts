@@ -3,8 +3,12 @@
 
 ## Disclaimer
 
-This tool is intended for authorized use only.
-You must have explicit permission to access and extract data from any device you connect.
+This repository contains a collection of scripts gathered throughout my professional career.
+Some of these scripts may be powerful, experimental, or potentially dangerous if misused, depending on the context in which they are executed.
 
-The author is not responsible for misuse or unauthorized access.
+These scripts are provided for educational and professional use only.
+You are solely responsible for understanding what each script does before executing it and for ensuring that you have proper authorization to use them in your environment.
 
+The author assumes no responsibility or liability for any damage, data loss, system failure, or legal consequences resulting from the use or misuse of the contents of this repository.
+
+Use at your own risk.
