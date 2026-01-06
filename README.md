@@ -1,6 +1,9 @@
 # my-personal-scripts
  A long list of scripts that I have collected throughout my career as a computer engineer.
 
+ ![Demo](https://github.com/DanielRosillo/my-personal-scripts/blob/main/leading.jpg)
+
+
 ## Disclaimer
 
 This repository contains a collection of scripts gathered throughout my professional career.
@@ -12,3 +15,5 @@ You are solely responsible for understanding what each script does before execut
 The author assumes no responsibility or liability for any damage, data loss, system failure, or legal consequences resulting from the use or misuse of the contents of this repository.
 
 Use at your own risk.
+
+* Lux ex Tenebris
