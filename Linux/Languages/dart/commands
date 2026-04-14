@@ -9,3 +9,5 @@ keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA \
 flutter pub run rename setBundleId --targets android --value "com.duxgor25.systems.contacts_extractor"
 
 flutter pub run rename setAppName --targets ios,android --value "Contacts Extractor by Duxgor25"
+
+flutter pub run flutter_launcher_icons
